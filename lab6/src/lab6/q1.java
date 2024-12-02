@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class q1 {
 
     public static void main(String[] args) {
-
+        
         int integerNum = 0;
         int numberSum = 0;
         int countPositive = 0;
@@ -23,13 +23,13 @@ public class q1 {
             } else {
                 countNegative = countNegative + 1;
             }
-
+            
             numberSum = numberSum + integerNum;
             count++;
-
+            
             System.out.print("Enter integer number : ");
             integerNum = s.nextInt();
-
+            
             average = numberSum / count;
             System.out.println("\ntotal number positive: " + countPositive);
             System.out.println("total number negative: " + countNegative);

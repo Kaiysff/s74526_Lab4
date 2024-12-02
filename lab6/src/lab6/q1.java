@@ -4,7 +4,11 @@ public class q1 {
 
     public static void main(String[] args) {
         
-        int integerNum , numberSum = 0, countPositive = 0, countNegative = 0, count = 0;
+        int integerNum = 0 ;
+        int numberSum = 0 ;
+        int countPositive = 0 ;
+        int countNegative = 0 ;
+        int count = 0;
         double average;
         Scanner s = new Scanner(System.in);
         
@@ -19,13 +23,17 @@ public class q1 {
         
         numberSum = numberSum + integerNum;
         count++;
+    
         System.out.print("\nEnter integer number : ");
         integerNum = s.nextInt();
-    }
+        
         average = numberSum/count;
         System.out.println("total number positive: " + countPositive);
         System.out.println("total number negative: " + countNegative);
         System.out.println("total from all integer number: " + numberSum);
         System.out.println("average :" + average);
+        break;
+        
         }
+}
 }

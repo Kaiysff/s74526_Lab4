@@ -4,20 +4,29 @@ public class q4 {
 
     public static void main(String[] args) {
 
-        int tutionFee = 4000;
-        double totaltutionFeeInTenY = tutionFee;
-        for (int year = 1; year <= 10; year++) {
-            totaltutionFeeInTenY = (totaltutionFeeInTenY*0.05) + totaltutionFeeInTenY;
+        int fee = 4000;
+        int i = 1;
+        double inc = 0.05;
+        int tenyear = 10;
+        int fouryear = 4;
+                
+        double totalfeeInTenY = fee;
+        while (i <= tenyear){
+            totalfeeInTenY = totalfeeInTenY + (fee*inc);
+            i++;
         }
-        System.out.printf("tution fee in ten year  : RM%.2f\n " , totaltutionFeeInTenY);
-        
-        double tutionFeeInFourY = tutionFee;
-        double totalcosttutionFeeInFourY = 0 ;
-        for (int year = 1; year <= 4; year++) {
-            tutionFeeInFourY  = (tutionFeeInFourY*0.05) + tutionFeeInFourY;
-            totalcosttutionFeeInFourY = totalcosttutionFeeInFourY + tutionFeeInFourY;
+        System.out.println("tuiton in ten years is : RM" + totalfeeInTenY);
+
+        fee = 4000;
+        i = 1;
+        double totalfee = fee;
+        double totalfeeinfouryear = 0;
+        while(i <= fouryear){
+            totalfee = totalfee +  (fee*inc);
+            totalfeeinfouryear = totalfeeinfouryear + totalfee;
+            i++;
         }
-            System.out.printf("four years tution fee starting from now  : RM%.2f\n" , totalcosttutionFeeInFourY);
-        }
-    }
+         System.out.println("total cost of four years tuition fee starting from now : RM" + totalfeeinfouryear);
+}
+}
 
